@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
@@ -31,11 +32,11 @@ func main() {
 
 	// 1. Create: Tambah 5 data pegawai (hardcoded)
 	pegawaiList := []Pegawai{
-		{Nama: "Budi", Posisi: "Manager", GajiPerBulan: 10000000},
-		{Nama: "Siti", Posisi: "Staff", GajiPerBulan: 5000000},
-		{Nama: "Andi", Posisi: "Supervisor", GajiPerBulan: 7000000},
-		{Nama: "Rina", Posisi: "Staff", GajiPerBulan: 5500000},
-		{Nama: "Tono", Posisi: "Admin", GajiPerBulan: 4000000},
+		{Nama: "Gita", Posisi: "Manager", GajiPerBulan: 10000000},
+		{Nama: "Ikke", Posisi: "Staff", GajiPerBulan: 5000000},
+		{Nama: "Aldifa", Posisi: "Supervisor", GajiPerBulan: 7000000},
+		{Nama: "Ely", Posisi: "Staff", GajiPerBulan: 5500000},
+		{Nama: "Miftah", Posisi: "Admin", GajiPerBulan: 4000000},
 	}
 	for _, p := range pegawaiList {
 		db.Create(&p)
